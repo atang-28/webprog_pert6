@@ -2,48 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insert Data Mahasiswa</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tambah data Mahasiswa</title>
 </head>
 <body>
-    <h2>Tambah Data Mahasiswa</h2>
-    <form action="dbinsertdatamhs.php" method="post">
+    
+    <h3>Tambah Data Mahasiswa</h3>
+    <form action="dbinsertdatamhs.php" method="POST">
         NIM
         <div>
-            <input type="text" name="txNIM">
+        <input type="text" name="txNIM">
         </div>
         NAMA
         <div>
-            <input type="text" name="txNAMA">
+        <input type="text" name="txNAMA">
         </div>
         Jenis Kelamin
         <div>
-            <select name="txJK" id="">
+            <select name="txJK">
                 <option value="L">Laki-Laki</option>
-                <option value="P">Prempuan</option>
+                <option value="P">Perempuan</option>
             </select>
         </div>
-        Tanggal Lahir
+        TGL Lahir
         <div>
-            <input type="date" name="txTGL">
+            <input type="date" name="txTALAG">
         </div>
-        JURUSAN
+        Jurusan
         <div>
-            <select name="txJUR" id="">
-                <option value="MTI">MTI</option>
-                <option value="KAB">KAB</option>
-            </select>
+        <select name="txJUR">
+            <option value="MTI">MTI</option>
+            <option value="KAB">KAB</option>
+        </select>
         </div>
-        PASSCODE
+        Passcode
         <div>
-            <input type="password" name="txPASS">
+            <input type="password" name="txPASSS">
         </div>
-
         <div>
             <button type="submit">Simpan Data</button>
         </div>
     </form>
-
 </body>
 </html>
